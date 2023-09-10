@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        a { /*Configuração normal da TAG*/
+            color: rgba(48, 4, 136, 0.637);
+            text-decoration: none;
+            font-weight: lighter;
+        }
+        a:visited { /*Visitei site*/
+            color: rgba(0, 64, 255, 0.637);
+        }
+        a:hover { /*Destaque/animação da TAG*/
+            color: brown;
+            text-decoration: underline;
+        }
+
+        a:active { /*Editar quando clicar no link*/
+            color: blue;
+        }
+
+       /* pseudo classe " : "
+        pseudo elemento " :: " */
+        a::before {/*antes do link*/
+            content:'»';
+            color: black;
+
+        }
+        a::after { /*Editar depois do link*/
+            content:'«'; /*conteúdo*/
+            color: black;
+        }
+        .especial {
+            border: 1px solid black;
+            background-color: blanchedalmond;
+        }
+        .instagram {
+            text-decoration: underline;
+            background-color: aliceblue;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links das minhas redes socias</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/bernardo_valle_/" target="_blank" class="instagram">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@bernardotadeu3129/about" target="_blank" class="especial">Youtube</a></li>
+        <li><a href="https://twitter.com/Bernardovalle51/" target="_blank">Twiter</a></li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando link externo</h1>
+    <p>Você pode acessar meu <a href="https://github.com/BernardoValle02/Projeto">repertório publico no GITHUB</a></p> <!--TAG a= Âncora para acessar o site-->
+    <!--TAG target="_blank"= Fazer o site abrir em uma nova guia-->
+    <p>Você também pode acessar minha <a href="https://www.fronteditor.dev/conceitos-html" target="_blank" rel="external">rede social</a></p> 
+    <h2>Usando links interno</h2>
+    <p>Está é a primeira pagina do site, se você quiser pode acessar minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <!--A PAG002 tem que está dentro do index-->
+    <p>Você pode está acessando nossa<a href="TERCEIRA PAG/pag003.html" target="_self">terceira pagina</a><p>
+    <!--Tem que informar o caminha caso esteja em outra pasta-->
+    <!--Target _sef= Indica que vai abrir na mesma guia-->
+    <h1>Baixar livros</h1>
+    <ul>
+        <li><a href="LIVRO/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar livro em pdf</a></li>
+        <a href="LIVRO/meulivro.zip" download="meulivro.zip" type="application/zip"> <li>Livro compactado em ZIP</li></a>
+        <!-- dentro da TAG a - Download - Type= tipo do arquivo-->
+    </ul>
+    <link rel="stylesheet" href="style.css">
+</body>
+
+</html>

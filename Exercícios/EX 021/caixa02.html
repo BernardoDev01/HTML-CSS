@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #E8E3AE;
+        }
+        header {
+            background-color: #E3DB3D;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10%;
+        }
+        nav {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: #63601B;
+            text-align: justify;  
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.434);
+            
+         }
+        nav > a{
+            text-decoration: none;
+            font-size: 20px;
+            color: #B3AD31;
+            margin-right: 50px; 
+                  
+        }
+        nav > a:hover{
+            background-color: #636023;
+            color: #FCF790;
+            text-decoration: underline;
+            margin: 10px; 
+        }
+
+        main {
+            background-color: #B3AD31;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10% 15% 20% 5%; /*Arredondar cantos da bordas*/
+        }
+        
+        article {
+            background-color: #757017c7;
+            margin: auto;
+            padding: auto;
+        }
+        
+        article > aside{
+            background-color: #9f9a2b;
+            color: white;
+            margin: auto;
+            padding: auto;
+        }
+        footer {
+            background-color: #636023;
+            color: rgba(172, 176, 180, 0.771);
+            margin: auto;
+            padding: 5px;
+            text-align: center;
+        }
+        #bola{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            text-align: center;
+        }   /*Criando uma bola*/
+        div {
+            color: rgb(202, 255, 127);
+            text-align: center;
+            padding: 50px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assunto">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, iste ipsum? Dignissimos repudiandae nostrum amet vitae autem unde magni, sint illum dolores commodi error, esse laboriosam eum consectetur, repellendus rem.</p>
+
+        </section>
+        <section id="noticias">
+            <article><h2>Noticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis molestias dolore alias accusantium provident, non possimus, cum suscipit amet tempore assumenda. Quam totam dolores aliquid amet molestias laborum consequatur!
+                </p><aside>Artigo escrito por Jose</aside></article>
+            <article></article>
+        </section>
+
+    </main>
+    <footer>
+        Desenvolvido pelo Cursoemvídeo.
+    </footer>
+    <div id="bola">bola</div>
+</body>
+</html>

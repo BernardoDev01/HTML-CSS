@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(Imagens/espaco.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /*Isso faz com que a imagem ocupe 100% da altura da tela*/
+}
+.astronauta {
+    color: white;
+    text-align: center;
+    padding-top: 130px;
+    display: block;
+}

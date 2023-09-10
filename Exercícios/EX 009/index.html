@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAS</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="I" start="1"> <!--TAG ol= Criar lista ordenada-->
+        <li>Levantar da cama</li> <!--TAG li= Adicionar conteúdo na lista-->
+        <li>Bater o dedinho na quina da mesa</li>
+        <li>Chamar o Sérgio para o soco</li>
+        <li>Oferecer café para o Marlon</li>
+        <!--Para personalizar a lista, utiliza a TAG type dentro da TAG ol, e também podemos alterar por qual númeração a lista vai começar, usando a TAG start-->
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul type="square"> <!--TAG ul= Criar lista não ordenada-->
+        <li>Cigarro</li> <!--TAG li= Adicionar conteúdo na lista-->
+        <li>Leite</li>
+        <li>Maconha</li>
+        <li>Biscoito</li>
+        <li>L Johnson</li>
+        <li>Sua mãe</li>
+        <!--Para personalizar a lista, utiliza a TAG type (circle, disc, square) dentro da TAG ol-->
+    </ul>
+    <h2>Linguagens Favoritas</h2>
+    <ol>
+        <li>Antigas</li> 
+        <ol type="A">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="A" start="4"> 
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <!--Colocando lista dentro da lista, segue a sequência, ol(abrir a lista)> li (Título da lista)> ol(abrir a lista) li(conteúdo da lista)-->
+            <!--A TAG start, mesmo sendo alfanúmerico, ela precisa ser indicada através de numero. -->
+        </ol>
+    </ol>
+    <h2>Jogos Favoritos</h2>
+    <ol>
+        <li>Super Nitendo</li>
+        <ul type="square">
+            <li>Mario Bross</li>
+            <li>Bomberman</li>
+            <li>Mario cart</li>
+        </ul>
+        <li>Playstation 2</li>
+        <ul type="square">
+            <li>God of War</li>
+            <li>Resident Evil</li>
+            <li>Black</li>
+        </ul>
+        <li>Computador</li>
+        <ul type="square">
+            <li>DDTank</li>
+            <li>League of Legend
+                <ul>
+                    <li>Melhor jogo atualmente</li>
+                    <!--Também é possível criar uma lista não ordenada dentro de uma lista ordenada, so seguir as TAGs ol(abrir a lista)> li (Título da lista)> ul(abrir a lista) li(conteúdo da lista)-->
+                    <!--Você consegue selecionar várias TAGs segurando a tecla ALT-->
+                </ul>
+            </li>
+        </ul>
+    </ol> 
+    <H2>Lista de Definição</H2>
+    <dl> <!--TAG dl= Criar lista de definição-->
+        <dt>HTML</dt> <!--TAG dt= Termo-->
+        <dd>Linguagem de marcação para a criação de conteúdo de um site</dd> <!--TAG dd= Descrição-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação de design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de marcação para a criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>

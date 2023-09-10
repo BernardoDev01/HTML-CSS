@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminue o tamanho do seu navegador</p>
+    <p>
+        <picture> <!--TAG picture= permite que voce crie vários source-->
+            <!--Cuidado com a nomeação da imagem-->
+            <!--Cuidado manter sempre na ordem das imagens-->
+            <source media="(max-width: 704px)" srcset="Imagens/ei.png" type="image/png">
+            <source media="(max-width: 1000px)" srcset="Imagens/ia.png" type="image/png">
+            <img src="Imagens/Imagem grande.png" alt="Imagem grande">
+        </picture>
+        <h1>Reproduzindo audio</h1> <!--TAG audio= permite reproduzir áudios no seu site-->
+        <!--Controls autoplay dentro da TAG audio-->
+        <!--MP3 WAV OGG - formatos para áudios-->
+        <audio preload="auto" controls>
+        <!--source - src= Uma outra forma de colocar audio-->
+        <!--Cuidado com o arquivo WAV porque ele é muito pesado-->
+            <source src="midia/midia 01.mp3" type="audio/mpeg">
+            <source src="midia/midia 01.ogg" type="audio/ogg">
+            <source src="midia/midia 01.wav" type="audio/wav">
+        </audio>
+        <p>Caso não reproduza o áudio, <a href="midia/midia 01.mp3" download="midia 01.mp3" type="audio/mpeg">voce pode baixar aqui</a></p>
+    </p>
+</body>
+</html>

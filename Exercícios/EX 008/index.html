@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <style>
+        mark { 
+            background-color:black;
+        }
+    </style>
+    <!--Posso criar a TAG style com o nome MARK 
+        e mudar todas as cores de uma vez do meu marcador.-->
+</head>
+<body>
+    <h1>Principais formatação</h1>
+    <h2>Negrito/Destaque</h2>
+    <p><b>Colocar em negrito</b></p><!--Tag não semântica-->
+    <p>É melhor usar a tag strong <strong>para colocar em destaque</strong></p> <!--Tag semântica-->
+    <h2>Itálico/Ênfase</h2>
+    <p>Nesta <i>frase</i>, temos um termo em <i>itálico usando a tag I</i></p> <!--Tag não semântica-->
+    <p> Nesta frase, talvez tenha um <em>termo em destaque com a tag EM</em> (ênfase) </p> <!--Tag semântica-->
+    <!--Evite usar TAGS não semânticas pois elas podem parar de funcioncar e te dar problemas no futuro,procure usar TAGS mais recentes.-->
+    <h2>Texto Marcado</h2>
+    <p> Podemos marcar nosso  <MARK >texto usando a tag MARK</MARK>.</p>
+                              <!--TAG mark= é usada para marcar o texto-->
+    <p>E agora temos outro texto <mark>marcado no final</mark> </p>
+    <P><mark style="color: black;">Hoje em dia tudo ficou mais facil com a internet</mark></P>
+    <!--Dentro da TAG mark podemos colocar a TAG style para mudar a cor do marcador.-->
+    <h2>Texto grande e pequeno</h2>
+    <p>estamos criando um <big>texto grande </big>e um <small>texto pequeno</small> nesse paragrafo</p>
+        <!-- tag big=grande  tag small=pequeno -->
+<h2>texto deletado</h2>
+<p>Podemos marcar um <del>texto excluido</del> para indicar que ele deve ser lido, mas não considerado.</p>
+<!-- TAG del = indicar que o texto foi excluído-->
+<h2>texto inserido</h2> 
+<p>Podemos marcar um texto como inserido para da uma <ins>ênfase de que ele foi inserido depois</ins></p>
+<!--TAG ins = indicar que a parte do texto foi acrescentada-->
+<p>Podemos <u>também usar a tag u</u> </p> <!--TAG u = usada pra inserir. não semântica-->
+<h2>Texto sobrescrito</h2>
+<p>Para inserir coisas tipo x<sup>20</sup>+30</p> <!--TAG sup = sobrescrever um termo-->
+<h2>Texto subescrito</h2>
+<p>Para inserir coisas do tipo H<sub>2</sub>O</p> <!--TAG sub = subscresver um termo-->
+</body>
+</html>

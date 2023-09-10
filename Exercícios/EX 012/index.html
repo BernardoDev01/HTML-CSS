@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Vídeos hospedados localmente.</h1>
+    <p>Os vídeos estão no meu servidor.</p>
+    <!-- poster= adicionar uma capa ao video-->
+    <!--Vídeo hospedado com a TAG video vão consumir muito trafego de dados-->
+    <video width="500" poster="imagem/teste de capa.jpg" controls>
+        <source src="midia/video 720.mp4" type="video/mp4">
+        <source src="midia/video 01.mp4" type="video/mp4">
+        <source src="midia/video mkv.mkv" type="video/mkv">
+        <source src="midia/video webm.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo</p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <!--Compartilhar - Incorporar - apenas colocar o códigos que vão gerar.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eJWv-8msjoM?si=8V_xzeqBPFmHHY8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo vídeo do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/5038784?h=5c34b40e1f" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/5038784">Teoria dos direitos animais</a> from <a href="https://vimeo.com/garylfrancione">Gary L. Francione</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>

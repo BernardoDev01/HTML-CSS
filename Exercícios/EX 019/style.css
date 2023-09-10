@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body {
+    background-color: #420039;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+    color: #FF570A;
+}
+h1#principal {
+    text-align: center;
+    color:#FF570A;
+   
+
+}
+h2 {
+    color:#FF570A;
+    
+}
+/*Em HTML é id = # em CSS
+  Em HTML é class = . em CSS*/
+  
+  p {
+    color: white;
+  }
+  .basico {
+    text-align: center;
+    color: chartreuse;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+  .avançado {
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+  }
+.destaque {
+    background-color: aliceblue;
+}
