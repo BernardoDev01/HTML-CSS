@@ -1,13 +1,23 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+:root {
+    --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --font-titulo: 'Kaushan Script';
+    --font-texto: 'Kalam';
+}
 * {
     margin: 0px;
     padding: 0px;
+
 }
 
 html, body {
     min-height: 100vh;
     background-color: gray;
+    font-family: var(--font-padrao);
 }
 
 header {
@@ -19,18 +29,72 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /*Colocar letra maiuscula*/
+    font-family: var(--font-titulo);
+    font-size: 10vh;
+    /*Mudar o tamanho do texto de acordo com a largura*/
 }
 
-head > p {
-    padding-bottom: 50px;
+header > p {
+    padding-bottom: 20px;
+    font-family: var(--font-titulo);
+    font-size: 3vh;
 }
 
-header > a footer > a {
+header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--font-texto);
+    font-size: 3vh;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(91, 88, 88);
+    color: white;
+    box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.787);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    color: black;
+    display: inline-block;
+    padding: 5px; 
+}
+
+section#img01 {
+    background-image: url(imagens/img\ 03.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(imagens/img\ 02.png);
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
