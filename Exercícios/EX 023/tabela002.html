@@ -12,6 +12,7 @@
         table {
             width: 700px;
             border-collapse: collapse;
+            position: relative;
         }
         caption {
             font-size: 1.5em;   
@@ -26,7 +27,21 @@
         }
         thead {
             background-color: grey;
+            color: white}
+        
+        thead > tr > th{
+            position: sticky;  /*Fixar o cabeçalho da planilha*/
+            top: -1;
+            background-color: grey;
+        }
+        
+        tbody > tr:nth-child(even) {
+            background-color: black;
             color: white
+        }
+                                    /*odd= linhas impares/even= linhas pares*/ 
+        tbody > tr:nth-child(odd) { /*Coloca uma tarja colorida de 2 em 2*/
+            background-color: lightgray;
         }
         .num {
             text-align: center;
@@ -82,6 +97,7 @@
                 <td class="num"><strong>128.030.577</strong></td>
 
         </tfoot>
+        
     </table>
 </body>
 </html>
