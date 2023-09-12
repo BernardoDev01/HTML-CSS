@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2.5vh;
+        }
+        table {
+            width: 700px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.5em;   
+            font-weight: bold;
+            padding: 10px;
+            background-color: gray;
+            color: black;   
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead {
+            background-color: grey;
+            color: white
+        }
+        .num {
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Anatomia de tabelas grandes</h1>
+    <table>
+        <caption>
+            População das Unidades Fedarativas
+        </caption>
+        <thead> 
+            <tr>
+                <th scope="col">Estado</th> <!--Mesma coluna scope col-->
+                <th scope="col" style="width: 200px;">População</th>
+            </tr>
+        </thead>
+        <tbody><!--Sempre que for um titulo TH 
+                    Sempre que for um dado TD-->
+                <tr>
+                    <td>São Paulo</td> 
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">20.538.718</td>
+                </tr>
+                <tr>
+                    <td> Rio de Janeiro</td>
+                    <td class="num"> 16.054.524</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14.136.417</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11.443.208</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">10.880.506</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9.058.155</td>
+                </tr>
+        </tbody>
+        <tfoot>
+                <th scope="row">Total de Habitantes</th> 
+                <td class="num"><strong>128.030.577</strong></td>
+
+        </tfoot>
+    </table>
+</body>
+</html>
+<!--Anatomia para tabelas grandes
+    table
+            thead
+                TR, TD, TH
+            tbody
+                TR, TD, TH
+            tfoot
+                TR, TD, TH-->

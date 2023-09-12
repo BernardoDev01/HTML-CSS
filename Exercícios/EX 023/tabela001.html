@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 01</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse; /*Vai juntar a tabela*/
+        }
+        
+        td { /*Aqui é onde vai formar a "borda" da tabela*/
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: bottom; /*Alinhamento vertical*/
+        }
+        .num {
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- HIERARQUIA DE TABELA
+     table = tabela 
+        table row = linha de tabela <tr>
+            table header = cabeçalho de tabela <th>
+                table data = dado de tabela <td>
+                    Não é necessário fechar a tag
+                        se os dados nao obdecer a hierarquia, vao aparecer antes ou depois da tabela-->
+        <table>
+            <tr> <!--Primeira linha-->
+                    <td>A1
+                    <td>B1
+                    <td>C1
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr class="linha">
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td class="num">B4</td>
+                <td>C4</td>
+            </tr>
+            <tr>
+                <td>A5</td>
+                <td>B5</td>
+                <td>C5</td>
+            </tr>
+        </table>
+</body>
+</html>
