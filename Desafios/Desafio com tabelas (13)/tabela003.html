@@ -6,14 +6,23 @@
     <title>Notas</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:'Times New Roman', Times, serif
+        }
+        h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
         table {
+            text-align: center;
             border-collapse: collapse;
-            width: 500px;
+            width: 700px;
+            margin: auto;
         }
         caption {
             padding: 10px;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
         }
         th {
             background-color: darkgray;
@@ -21,20 +30,38 @@
         }
         
         th, td {
+            font-size: 1.5em;
             border: 1px solid black;
-            box-shadow: 1px 1px 1px black;
             padding: 10px;
         }
         .p {
             text-align: left;
         }
+        
+        .m {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        .r {
+            text-align: center;
+            background-color: darkgray;
+            color: white;
+        }
+        
+        .s {
+            background-color: darkgray;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
     <h1>Boletim</h1>
     <table>
         <caption>
-            J.Jhon
+           Nome: J.Jhon do Valle
         </caption>
 
         <thead>
@@ -44,15 +71,15 @@
                 <th colspan="2" rowspan="">Notas</th>
                 <th rowspan="0">Médias</th>
                 <tr>
-                    <td>notas</td>
-                    <td>notas</td>
+                    <td class="s">Nota 01</td>
+                    <td class="s">Nota 02</td>
                 </tr>
             </tr>
         </thead>
 
         <tbody>
-            <th rowspan="4">Exatas</th>
-            <td>Matématica</td>
+            <th rowspan="4" class="m">Exatas</th>
+            <td>Matemática</td>
             <td>0,0</td>
             <td>0,0</td>
             <td>0,0</td>
@@ -81,10 +108,10 @@
         
             <tr class="p">
                 <th colspan="4">Média de Exatas</th>
-                <td> 00</td>
+                <td class="r">00</td>
             </tr>
         
-        <th rowspan="2">Humanas
+        <th rowspan="2" class="m">Humanas
             <td>História</td>
             <td>00</td>
             <td>00</td>
@@ -99,8 +126,8 @@
         </tr>
 
         <tr class="p">
-            <th colspan="4">Média de Exatas</th>
-            <td> 00</td>
+            <th colspan="4">Média de Humanas</th>
+            <td class="r">00</td>
         </tr>
         </tbody>
     </table>
