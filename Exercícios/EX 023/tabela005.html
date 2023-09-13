@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 005</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.333);
+            padding: 10px;
+        }
+
+        .cnome {
+            background-color: greenyellow;
+        }
+
+        .cgroup{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela 005</h1>
+    
+    <table>
+        <colgroup> <!--Personalizar por coluna-->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgroup" span="2"> <!--Mesma personalização-->
+        </colgroup>
+        
+        <caption>Cadastro</caption>
+        
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25 anos</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25 anos</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr class="">
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25 anos</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25 anos</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25 anos</td>
+            <td>Jornalista</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
