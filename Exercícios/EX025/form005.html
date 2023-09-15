@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+        body {
+            font-family: 'Lora';
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php">
+        <fieldset> <!--Input:radio= Adicionar uma caixa de sexo eles tem que ter o mesmo "name"-->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"> <label for="isxmas" value="M">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" checked> <label for="isxfem" value="F">Femenino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend> <!--Input:checkbox= criar uma caixa de seleção-->
+            <input type="checkbox" name="esbas" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esfut" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br> 
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
