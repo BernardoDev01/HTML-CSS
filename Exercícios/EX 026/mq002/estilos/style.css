@@ -1,2 +1,22 @@
 @charset "UTF-8";
 /*GERAL*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    width: 100vw; /*vw= Largura*/
+    height: 100vh; /*vh= Altura*/
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: rgb(1, 1, 87);
+    text-shadow: 1px 1px 1px rgba(0, 0, 139, 0.505);
+    padding: 10px;
+
+}
